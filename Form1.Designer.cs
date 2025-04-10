@@ -227,6 +227,7 @@
             Controls.Add(panel1);
             Controls.Add(panel2);
             Name = "login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "login";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();

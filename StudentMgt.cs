@@ -10,29 +10,19 @@ using System.Windows.Forms;
 
 namespace CampusHub
 {
-    public partial class Dashboard : Form
+    public partial class StudentMgt : Form
     {
-        public Dashboard()
+        public StudentMgt()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            login LoginForm = new login();
-            LoginForm.Show();
-
-            this.Close();
+            Dashboard dashboardForm = new Dashboard();
+            dashboardForm.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -43,12 +33,17 @@ namespace CampusHub
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            login LoginForm = new login();
+            LoginForm.Show();
 
-            Dashboard dashboardForm = new Dashboard();
-            dashboardForm.Show();
+            this.Close();
+        }
+
+        private void StudentMgt_Load(object sender, EventArgs e)
+        {
+
         }
 
         private void button4_Click(object sender, EventArgs e)
