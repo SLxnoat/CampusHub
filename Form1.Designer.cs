@@ -31,8 +31,9 @@
             label1 = new Label();
             panel2 = new Panel();
             panel1 = new Panel();
-            label6 = new Label();
+            panel4 = new Panel();
             label5 = new Label();
+            label6 = new Label();
             button1 = new Button();
             tbLoginPw = new TextBox();
             tbLoginUser = new TextBox();
@@ -43,6 +44,7 @@
             pictureBox1 = new PictureBox();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
+            panel4.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -75,8 +77,7 @@
             panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel1.BackColor = Color.DarkOrange;
             panel1.BorderStyle = BorderStyle.Fixed3D;
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label5);
+            panel1.Controls.Add(panel4);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(tbLoginPw);
             panel1.Controls.Add(tbLoginUser);
@@ -89,30 +90,41 @@
             panel1.Size = new Size(340, 602);
             panel1.TabIndex = 2;
             // 
-            // label6
+            // panel4
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14F, FontStyle.Italic);
-            label6.Location = new Point(46, 497);
-            label6.Name = "label6";
-            label6.Size = new Size(234, 32);
-            label6.TabIndex = 6;
-            label6.Text = "create a new account";
+            panel4.Controls.Add(label5);
+            panel4.Controls.Add(label6);
+            panel4.Dock = DockStyle.Bottom;
+            panel4.Location = new Point(0, 446);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(336, 152);
+            panel4.TabIndex = 7;
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F, FontStyle.Italic);
-            label5.Location = new Point(52, 454);
+            label5.Location = new Point(61, 9);
             label5.Name = "label5";
             label5.Size = new Size(228, 32);
             label5.TabIndex = 5;
             label5.Text = "Forgotten password?";
             // 
+            // label6
+            // 
+            label6.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Italic);
+            label6.Location = new Point(55, 41);
+            label6.Name = "label6";
+            label6.Size = new Size(234, 32);
+            label6.TabIndex = 6;
+            label6.Text = "create a new account";
+            // 
             // button1
             // 
-            button1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             button1.AutoSize = true;
             button1.BackColor = Color.Black;
             button1.Cursor = Cursors.Hand;
@@ -220,6 +232,8 @@
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -241,5 +255,6 @@
         private Button button1;
         private Label label6;
         private Label label5;
+        private Panel panel4;
     }
 }
