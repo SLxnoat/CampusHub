@@ -1,65 +1,94 @@
-# 🎓 CampusHub - University Management System
+# 🎓 CampusHub – University Management System
 
-> **Empowering Campuses, Enabling Futures.**  
-> Developed by **H M C M Bandara** | *ArtXpert-Code*
+> A modern Windows Forms application built for efficient campus administration.  
+> Developed by **H. M. C. M. Bandara** | Powered by **ArtXpert-Code**
 
 ---
 
 ## 📌 Overview
 
-**CampusHub** is a modern, offline-ready **University Management System** developed in **C# using WinForms**. It's designed to streamline academic and administrative tasks in universities, colleges, and institutes. Featuring a clean interface, customizable theming, and secure role-based access, CampusHub is ideal for educational institutions looking for digital transformation.
+**CampusHub** is a C#-based front-end desktop application designed to streamline university operations. Built using Windows Forms, it provides a central dashboard for managing students, lecturers, faculties, assignments, attendance, and exam results — all while demonstrating key Object-Oriented Programming concepts.
+
+> 💡 Note: This is a front-end only application. No database is used — data is handled via local controls and UI logic.
 
 ---
 
-## 🚀 Features
+## 🧩 Features
 
-🔐 **Role-Based Login** (Admin, Student, Lecturer)  
-👩‍🎓 **Student Management** – Add, update, delete, assign courses  
-👨‍🏫 **Lecturer Module** – Manage faculty and subjects  
-📚 **Course & Department Setup**  
-📅 **Timetable Scheduling** – Weekly views for staff and students  
-📝 **Exam Results** – GPA calculation, mark sheets  
-🔔 **Notification System** – Modal alerts for key updates  
-📊 **Reports & Analytics** – Visual and printable stats  
-⚙️ **Theming Support** – Yellow & black UI with white fonts  
-🖼️ **Dashboard UI** – Role-based, icon-driven interface  
-🎬 **Splash Screen with Progress Bar**
-
----
-
-## 🖥️ UI Screens
-
-- Splash Screen  
-- Login Form  
-- Admin Dashboard  
-- Student & Lecturer Management  
-- Course & Department Panels  
-- Timetable Module  
-- Exam Result Entry  
-- Notifications Panel  
-- Reports & Graph View  
-- Settings / Theme Customizer
+- 🔐 **Login System** – Simple admin login with logout and exit functionality
+- 🏠 **Admin Dashboard** – Central navigation panel with real-time clock and date
+- 🎓 **Student Management** – Add, update, and delete student data
+- 🏛️ **Faculty Management** – Manage faculty names and assign departments
+- 👨‍🏫 **Lecturer Management** – Handle lecturer details and assigned courses
+- 📎 **Assignment Upload** – Upload multiple DOC/PDF files to local storage
+- 📅 **Attendance Module** – Simulate attendance tracking for students
+- 📝 **Exam Results** – Record and display grades
+- ⏰ **Live Clock & Date** – Real-time display on the dashboard
+- 🖼️ **Modern UI** – Organized layout with branding and logo support
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 OOP Concepts Implemented
 
-- **Language:** C# (.NET 8.0, Windows Forms)  
-- **IDE:** Visual Studio 2022  
-- **Data Storage:** In-memory Lists & File Persistence  
-- **Design:** Custom WinForms UI with icon buttons and themed panels
+| Concept | Usage |
+|--------|--------|
+| **Encapsulation** | Separate classes for each module (e.g., Student, Assignment) |
+| **Inheritance** | All forms inherit from the base `Form` class |
+| **Polymorphism** | Event method overloading in buttons & forms |
+| **Abstraction** | File handling and module logic hidden behind simple UIs |
+| **Event-Driven Programming** | Actions driven by user events (clicks, timers) |
+| **Reusability** | Shared navigation, message dialogs, and utilities across forms |
 
 ---
 
-## 📸 Screenshots
-  
+## 🖥️ Tech Stack
+
+- Language: **C#**
+- Framework: **.NET Windows Forms**
+- IDE: **Visual Studio 2022**
+- UI: **Custom-designed with yellow/black theme, white fonts**
+- File Storage: `D:\Degree\OOP\Mini Project\file store` (for assignment files)
+
+---
+## 🧪 How to Run
+
+1. Open `CampusHub.sln` in **Visual Studio**.
+2. Build the project:  
+   `Ctrl + Shift + B`
+3. Run the application:  
+   Press `F5` or click the green ▶️ "Start" button.
+4. Login credentials:
+   Username: admin
+   Password: admin123
+5. Once logged in, navigate through the dashboard to access all modules.
 
 ---
 
-## 📝 Installation
+## 📝 Future Improvements
+
+- 🔗 Add **database integration** for real-time data storage and retrieval
+- 🧑‍💼 Implement **role-based login** (e.g., Admin, Lecturer, Student)
+- 🛡️ Improve **form validations** and input verification
+- 📤 Export **reports as PDF or Excel**
+- 💬 Add **notifications/messages module**
+- 🌐 Add **multi-language support**
+- 🎨 Add **themes or UI customization options**
+
+---
+
+## 📁 Folder Structure
 
 ```bash
-1. Clone this repo
-2. Open in Visual Studio
-3. Build the solution
-4. Run the application
+CampusHub/
+├── Forms/
+│   ├── Login.cs
+│   ├── Dashboard.cs
+│   ├── StudentMgt.cs
+│   ├── FacultyMgt.cs
+│   ├── LecturerMgt.cs
+│   └── Assignment.cs
+├── Assets/
+│   └── Logo, Icons
+├── bin/
+├── obj/
+└── Program.cs
