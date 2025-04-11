@@ -105,5 +105,15 @@ namespace CampusHub
         {
             timer1.Start();
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data saved successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data updated successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

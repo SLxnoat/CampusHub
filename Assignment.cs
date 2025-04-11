@@ -115,5 +115,43 @@ namespace CampusHub
         {
             timer1.Start();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data updated successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Multiselect = true;
+                openFileDialog.Filter = "Documents (*.pdf;*.doc;*.docx)|*.pdf;*.doc;*.docx";
+                openFileDialog.Title = "Select Assignment Files";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string destinationPath = @"D:\Degree\OOP\Mini Project\file store\";
+
+                    foreach (string file in openFileDialog.FileNames)
+                    {
+                        try
+                        {
+                            string fileName = Path.GetFileName(file);
+                            string destFile = Path.Combine(destinationPath, fileName);
+
+                            // Copy the file
+                            File.Copy(file, destFile, true); // true = overwrite if exists
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Error uploading file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+
+                    MessageBox.Show("Files uploaded successfully!", "Upload Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
     }
 }

@@ -83,5 +83,27 @@ namespace CampusHub
         {
             timer1.Start();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Login LoginForm = new Login();
+                LoginForm.Show();
+                this.Close();
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data saved successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data saved successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

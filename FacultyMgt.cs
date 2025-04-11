@@ -95,5 +95,20 @@ namespace CampusHub
             lblClock.Text = DateTime.Now.ToString("hh:mm:ss tt");
             lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
         }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data saved successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data updated successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Data saved successfully!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

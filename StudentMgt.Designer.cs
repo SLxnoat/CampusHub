@@ -80,6 +80,9 @@
             label11 = new Label();
             label9 = new Label();
             panel11 = new Panel();
+            checkBox2 = new CheckBox();
+            checkBox1 = new CheckBox();
+            label7 = new Label();
             button11 = new Button();
             button10 = new Button();
             button9 = new Button();
@@ -100,9 +103,6 @@
             label20 = new Label();
             label19 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
-            label7 = new Label();
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
             panel4.SuspendLayout();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
@@ -755,6 +755,35 @@
             panel11.Size = new Size(590, 298);
             panel11.TabIndex = 6;
             // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(185, 192);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(79, 24);
+            checkBox2.TabIndex = 20;
+            checkBox2.Text = "Female";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(105, 192);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(64, 24);
+            checkBox1.TabIndex = 19;
+            checkBox1.Text = "Male";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(35, 194);
+            label7.Name = "label7";
+            label7.Size = new Size(64, 20);
+            label7.TabIndex = 18;
+            label7.Text = "Gender :";
+            // 
             // button11
             // 
             button11.Location = new Point(269, 243);
@@ -763,6 +792,7 @@
             button11.TabIndex = 17;
             button11.Text = "Update";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button10
             // 
@@ -772,6 +802,7 @@
             button10.TabIndex = 16;
             button10.Text = "Clear";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button9
             // 
@@ -781,6 +812,7 @@
             button9.TabIndex = 15;
             button9.Text = "Save";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // dateTimePicker1
             // 
@@ -794,8 +826,8 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Intake 1", "", "", "Intake 2", "", "", "Intake 3", "", "", "Intake 4", "", "", "Intake 5", "", "", "Intake 6", "", "", "Intake 7", "", "", "Intake 8", "", "", "Intake 9", "", "", "Intake 10", "", "", "Intake 11", "", "", "Intake 12" });
-            comboBox2.Location = new Point(398, 149);
+            comboBox2.Items.AddRange(new object[] { "Intake 1", "Intake 2", "Intake 3", "Intake 4", "Intake 5", "Intake 6", "Intake 7", "Intake 8", "Intake 9", "Intake 10", "Intake 11", "Intake 12" });
+            comboBox2.Location = new Point(392, 149);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(186, 28);
             comboBox2.TabIndex = 14;
@@ -804,21 +836,21 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Computing", "Business Management", "Engineering", "Medicine", "Law", "Arts and Humanities", "Faculty of Science", "Faculty of Education", "Faculty of Agriculture", "Faculty of Architecture and Design" });
-            comboBox1.Location = new Point(398, 99);
+            comboBox1.Location = new Point(392, 99);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(186, 28);
             comboBox1.TabIndex = 13;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(398, 53);
+            textBox4.Location = new Point(392, 53);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(186, 27);
             textBox4.TabIndex = 12;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(398, 7);
+            textBox3.Location = new Point(392, 7);
             textBox3.Multiline = true;
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(186, 27);
@@ -859,7 +891,7 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Location = new Point(339, 152);
+            label25.Location = new Point(333, 152);
             label25.Name = "label25";
             label25.Size = new Size(56, 20);
             label25.TabIndex = 6;
@@ -868,7 +900,7 @@
             // label24
             // 
             label24.AutoSize = true;
-            label24.Location = new Point(334, 106);
+            label24.Location = new Point(328, 106);
             label24.Name = "label24";
             label24.Size = new Size(61, 20);
             label24.TabIndex = 5;
@@ -877,7 +909,7 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Location = new Point(310, 60);
+            label23.Location = new Point(304, 60);
             label23.Name = "label23";
             label23.Size = new Size(85, 20);
             label23.TabIndex = 4;
@@ -886,7 +918,7 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Location = new Point(326, 14);
+            label22.Location = new Point(320, 14);
             label22.Name = "label22";
             label22.Size = new Size(69, 20);
             label22.TabIndex = 3;
@@ -922,35 +954,6 @@
             // timer1
             // 
             timer1.Tick += timer1_Tick;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(35, 194);
-            label7.Name = "label7";
-            label7.Size = new Size(64, 20);
-            label7.TabIndex = 18;
-            label7.Text = "Gender :";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(105, 192);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(64, 24);
-            checkBox1.TabIndex = 19;
-            checkBox1.Text = "Male";
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(185, 192);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(79, 24);
-            checkBox2.TabIndex = 20;
-            checkBox2.Text = "Female";
-            checkBox2.UseVisualStyleBackColor = true;
             // 
             // StudentMgt
             // 

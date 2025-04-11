@@ -312,6 +312,7 @@
             button1.TabIndex = 7;
             button1.Text = "Log Out";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label9
             // 
@@ -778,6 +779,7 @@
             button13.TabIndex = 15;
             button13.Text = "Save";
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // comboBox2
             // 
@@ -876,6 +878,7 @@
             button14.TabIndex = 15;
             button14.Text = "Save";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // comboBox1
             // 

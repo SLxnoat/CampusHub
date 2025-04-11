@@ -83,7 +83,7 @@
             label11 = new Label();
             button12 = new Button();
             button11 = new Button();
-            button10 = new Button();
+            btnUpload = new Button();
             comboBox4 = new ComboBox();
             label10 = new Label();
             comboBox3 = new ComboBox();
@@ -681,7 +681,7 @@
             panel11.Controls.Add(label11);
             panel11.Controls.Add(button12);
             panel11.Controls.Add(button11);
-            panel11.Controls.Add(button10);
+            panel11.Controls.Add(btnUpload);
             panel11.Controls.Add(comboBox4);
             panel11.Controls.Add(label10);
             panel11.Controls.Add(comboBox3);
@@ -739,6 +739,7 @@
             button12.TabIndex = 19;
             button12.Text = "Edit Assignment";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button11
             // 
@@ -749,14 +750,15 @@
             button11.Text = "Clear all";
             button11.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnUpload
             // 
-            button10.Location = new Point(131, 206);
-            button10.Name = "button10";
-            button10.Size = new Size(417, 33);
-            button10.TabIndex = 17;
-            button10.Text = "Submit your pdf";
-            button10.UseVisualStyleBackColor = true;
+            btnUpload.Location = new Point(131, 206);
+            btnUpload.Name = "btnUpload";
+            btnUpload.Size = new Size(417, 33);
+            btnUpload.TabIndex = 17;
+            btnUpload.Text = "Submit your pdf";
+            btnUpload.UseVisualStyleBackColor = true;
+            btnUpload.Click += btnUpload_Click;
             // 
             // comboBox4
             // 
@@ -933,7 +935,7 @@
         private ComboBox comboBox1;
         private Button button12;
         private Button button11;
-        private Button button10;
+        private Button btnUpload;
         private ComboBox comboBox4;
         private Label label10;
         private DateTimePicker dateTimePicker2;

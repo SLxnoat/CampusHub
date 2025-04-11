@@ -559,6 +559,7 @@
             button12.TabIndex = 14;
             button12.Text = "Save";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // comboBox1
             // 
@@ -725,6 +726,7 @@
             button11.TabIndex = 17;
             button11.Text = "Update";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button10
             // 
@@ -743,6 +745,7 @@
             button9.TabIndex = 15;
             button9.Text = "Save";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // label26
             // 
