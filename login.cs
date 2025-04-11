@@ -1,8 +1,8 @@
 namespace CampusHub
 {
-    public partial class login : Form
+    public partial class Login : Form
     {
-        public login()
+        public Login()
         {
             InitializeComponent();
         }

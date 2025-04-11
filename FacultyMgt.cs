@@ -10,41 +10,16 @@ using System.Windows.Forms;
 
 namespace CampusHub
 {
-    public partial class Dashboard : Form
+    public partial class FacultyMgt : Form
     {
-        public Dashboard()
+        public FacultyMgt()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void FacultyMgt_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Login LoginForm = new Login();
-                LoginForm.Show();
-                this.Close();
-            }
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            StudentMgt studentMgt = new StudentMgt();
-            studentMgt.Show();
-
-            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -53,6 +28,14 @@ namespace CampusHub
 
             Dashboard dashboardForm = new Dashboard();
             dashboardForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            StudentMgt studentMgt = new StudentMgt();
+            studentMgt.Show();
+
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -69,6 +52,18 @@ namespace CampusHub
             facultyMgt.Show();
 
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Login LoginForm = new Login();
+                LoginForm.Show();
+                this.Close();
+            }
         }
     }
 }

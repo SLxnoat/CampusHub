@@ -1,6 +1,6 @@
 ﻿namespace CampusHub
 {
-    partial class Dashboard
+    partial class Assignment
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@
             panel1 = new Panel();
             label15 = new Label();
             panel5 = new Panel();
+            label7 = new Label();
+            label8 = new Label();
             label2 = new Label();
-            label1 = new Label();
+            label6 = new Label();
             panel3 = new Panel();
             label3 = new Label();
             label4 = new Label();
             panel2 = new Panel();
-            panel4 = new Panel();
-            label5 = new Label();
             panel6 = new Panel();
             panel16 = new Panel();
             button5 = new Button();
@@ -61,27 +61,38 @@
             panel13 = new Panel();
             button2 = new Button();
             pictureBox1 = new PictureBox();
-            panel7 = new Panel();
-            button1 = new Button();
-            panel12 = new Panel();
+            panel4 = new Panel();
+            panel10 = new Panel();
+            label18 = new Label();
+            label19 = new Label();
+            panel8 = new Panel();
+            label16 = new Label();
+            label17 = new Label();
+            panel9 = new Panel();
             label13 = new Label();
             label14 = new Label();
-            panel11 = new Panel();
-            label11 = new Label();
-            label12 = new Label();
-            panel10 = new Panel();
             label9 = new Label();
+            panel7 = new Panel();
+            button1 = new Button();
+            panel11 = new Panel();
+            dateTimePicker2 = new DateTimePicker();
+            label12 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            label11 = new Label();
+            button12 = new Button();
+            button11 = new Button();
+            button10 = new Button();
+            comboBox4 = new ComboBox();
             label10 = new Label();
-            panel9 = new Panel();
-            label8 = new Label();
-            label7 = new Label();
-            panel8 = new Panel();
-            label6 = new Label();
-            pictureBox8 = new PictureBox();
+            comboBox3 = new ComboBox();
+            label5 = new Label();
+            comboBox2 = new ComboBox();
+            comboBox1 = new ComboBox();
+            label1 = new Label();
+            label26 = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
-            panel4.SuspendLayout();
             panel6.SuspendLayout();
             panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -97,13 +108,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel7.SuspendLayout();
-            panel12.SuspendLayout();
-            panel11.SuspendLayout();
+            panel4.SuspendLayout();
             panel10.SuspendLayout();
-            panel9.SuspendLayout();
             panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel9.SuspendLayout();
+            panel7.SuspendLayout();
+            panel11.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -112,7 +122,6 @@
             panel1.Controls.Add(label15);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel3);
-            panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Top;
             panel1.ForeColor = Color.DarkOrange;
             panel1.Location = new Point(0, 0);
@@ -125,44 +134,70 @@
             label15.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label15.AutoSize = true;
             label15.Font = new Font("Segoe UI Black", 28F, FontStyle.Bold);
-            label15.Location = new Point(542, 9);
+            label15.ForeColor = Color.DarkOrange;
+            label15.Location = new Point(471, 9);
             label15.Name = "label15";
-            label15.Size = new Size(166, 62);
-            label15.TabIndex = 5;
-            label15.Text = "Home";
+            label15.Size = new Size(301, 62);
+            label15.TabIndex = 7;
+            label15.Text = "Assignment";
             // 
             // panel5
             // 
+            panel5.Controls.Add(label7);
+            panel5.Controls.Add(label8);
             panel5.Controls.Add(label2);
-            panel5.Controls.Add(label1);
+            panel5.Controls.Add(label6);
             panel5.Dock = DockStyle.Right;
             panel5.Location = new Point(911, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(247, 88);
-            panel5.TabIndex = 4;
+            panel5.TabIndex = 6;
+            // 
+            // label7
+            // 
+            label7.Anchor = AnchorStyles.Right;
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label7.ForeColor = Color.DarkOrange;
+            label7.Location = new Point(138, 1);
+            label7.Name = "label7";
+            label7.Size = new Size(108, 25);
+            label7.TabIndex = 3;
+            label7.Text = "00/00/0000";
+            // 
+            // label8
+            // 
+            label8.Anchor = AnchorStyles.Right;
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label8.ForeColor = Color.DarkOrange;
+            label8.Location = new Point(187, 26);
+            label8.Name = "label8";
+            label8.Size = new Size(57, 25);
+            label8.TabIndex = 2;
+            label8.Text = "00:00";
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Right;
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label2.Location = new Point(136, 9);
+            label2.Location = new Point(230, -3);
             label2.Name = "label2";
             label2.Size = new Size(108, 25);
             label2.TabIndex = 1;
             label2.Text = "00/00/0000";
-            label2.Click += label2_Click;
             // 
-            // label1
+            // label6
             // 
-            label1.Anchor = AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label1.Location = new Point(185, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(57, 25);
-            label1.TabIndex = 0;
-            label1.Text = "00:00";
+            label6.Anchor = AnchorStyles.Right;
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            label6.Location = new Point(279, 22);
+            label6.Name = "label6";
+            label6.Size = new Size(57, 25);
+            label6.TabIndex = 0;
+            label6.Text = "00:00";
             // 
             // panel3
             // 
@@ -172,13 +207,14 @@
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
             panel3.Size = new Size(321, 88);
-            panel3.TabIndex = 3;
+            panel3.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Dock = DockStyle.Top;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.DarkOrange;
             label3.Location = new Point(0, 0);
             label3.Name = "label3";
             label3.Padding = new Padding(8, 6, 110, 0);
@@ -191,6 +227,7 @@
             label4.AutoSize = true;
             label4.Dock = DockStyle.Bottom;
             label4.Font = new Font("Segoe UI Black", 28F, FontStyle.Bold);
+            label4.ForeColor = Color.DarkOrange;
             label4.Location = new Point(0, 26);
             label4.Name = "label4";
             label4.Size = new Size(180, 62);
@@ -199,35 +236,13 @@
             // 
             // panel2
             // 
-            panel2.Location = new Point(-2, 274);
+            panel2.BackColor = Color.Black;
+            panel2.Dock = DockStyle.Bottom;
+            panel2.ForeColor = Color.DarkOrange;
+            panel2.Location = new Point(0, 639);
             panel2.Name = "panel2";
-            panel2.Size = new Size(250, 125);
-            panel2.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Black;
-            panel4.Controls.Add(label5);
-            panel4.Dock = DockStyle.Bottom;
-            panel4.Location = new Point(0, 639);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(1158, 45);
-            panel4.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = Color.DarkOrange;
-            label5.Location = new Point(80, 0);
-            label5.Name = "label5";
-            label5.Padding = new Padding(110, 10, 110, 10);
-            label5.Size = new Size(996, 42);
-            label5.TabIndex = 0;
-            label5.Text = "© 2025 H M C M Bandara    Designed & Developed by ArtXpert-Code    All rights reserved.    Unauthorized duplication is prohibited.";
-            label5.TextAlign = ContentAlignment.TopCenter;
-            label5.UseCompatibleTextRendering = true;
+            panel2.Size = new Size(1158, 45);
+            panel2.TabIndex = 1;
             // 
             // panel6
             // 
@@ -243,7 +258,7 @@
             panel6.Location = new Point(0, 88);
             panel6.Name = "panel6";
             panel6.Size = new Size(321, 551);
-            panel6.TabIndex = 2;
+            panel6.TabIndex = 5;
             // 
             // panel16
             // 
@@ -473,50 +488,108 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // panel7
+            // panel4
             // 
-            panel7.BackColor = Color.DarkOrange;
-            panel7.Controls.Add(button1);
-            panel7.Controls.Add(panel12);
-            panel7.Controls.Add(panel11);
-            panel7.Controls.Add(panel10);
-            panel7.Controls.Add(panel9);
-            panel7.Controls.Add(panel8);
-            panel7.Dock = DockStyle.Right;
-            panel7.Location = new Point(911, 88);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(247, 551);
-            panel7.TabIndex = 3;
+            panel4.BackColor = Color.DarkOrange;
+            panel4.Controls.Add(panel10);
+            panel4.Controls.Add(panel8);
+            panel4.Controls.Add(panel9);
+            panel4.Controls.Add(label9);
+            panel4.Controls.Add(panel7);
+            panel4.Dock = DockStyle.Right;
+            panel4.Location = new Point(911, 88);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(247, 551);
+            panel4.TabIndex = 6;
             // 
-            // button1
+            // panel10
             // 
-            button1.Dock = DockStyle.Fill;
-            button1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.Location = new Point(0, 448);
-            button1.Name = "button1";
-            button1.Size = new Size(247, 103);
-            button1.TabIndex = 0;
-            button1.Text = "Log Out";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            panel10.Controls.Add(label18);
+            panel10.Controls.Add(label19);
+            panel10.Dock = DockStyle.Top;
+            panel10.Location = new Point(0, 259);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(247, 95);
+            panel10.TabIndex = 5;
             // 
-            // panel12
+            // label18
             // 
-            panel12.Controls.Add(label13);
-            panel12.Controls.Add(label14);
-            panel12.Dock = DockStyle.Top;
-            panel12.Location = new Point(0, 353);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(247, 95);
-            panel12.TabIndex = 4;
+            label18.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label18.Location = new Point(111, 38);
+            label18.Margin = new Padding(0);
+            label18.Name = "label18";
+            label18.Size = new Size(26, 31);
+            label18.TabIndex = 1;
+            label18.Text = "0";
+            label18.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            label19.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.Location = new Point(23, 0);
+            label19.Margin = new Padding(0);
+            label19.Name = "label19";
+            label19.Size = new Size(208, 38);
+            label19.TabIndex = 0;
+            label19.Text = "Active Module";
+            label19.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(label16);
+            panel8.Controls.Add(label17);
+            panel8.Dock = DockStyle.Top;
+            panel8.Location = new Point(0, 164);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(247, 95);
+            panel8.TabIndex = 4;
+            // 
+            // label16
+            // 
+            label16.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label16.Location = new Point(111, 38);
+            label16.Margin = new Padding(0);
+            label16.Name = "label16";
+            label16.Size = new Size(26, 31);
+            label16.TabIndex = 1;
+            label16.Text = "0";
+            label16.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            label17.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.Location = new Point(11, 0);
+            label17.Margin = new Padding(0);
+            label17.Name = "label17";
+            label17.Size = new Size(227, 38);
+            label17.TabIndex = 0;
+            label17.Text = "Active Assignm.";
+            label17.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(label13);
+            panel9.Controls.Add(label14);
+            panel9.Dock = DockStyle.Top;
+            panel9.Location = new Point(0, 69);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(247, 95);
+            panel9.TabIndex = 3;
             // 
             // label13
             // 
             label13.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label13.Location = new Point(111, 41);
+            label13.Location = new Point(111, 38);
             label13.Margin = new Padding(0);
             label13.Name = "label13";
             label13.Size = new Size(26, 31);
@@ -529,180 +602,227 @@
             label14.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label14.AutoSize = true;
             label14.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.Location = new Point(29, 3);
+            label14.Location = new Point(0, 0);
             label14.Margin = new Padding(0);
             label14.Name = "label14";
-            label14.Size = new Size(190, 38);
+            label14.Size = new Size(244, 38);
             label14.TabIndex = 0;
-            label14.Text = "Total Courses";
+            label14.Text = "Total Assignment";
             label14.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel11
-            // 
-            panel11.Controls.Add(label11);
-            panel11.Controls.Add(label12);
-            panel11.Dock = DockStyle.Top;
-            panel11.Location = new Point(0, 258);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(247, 95);
-            panel11.TabIndex = 3;
-            // 
-            // label11
-            // 
-            label11.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(111, 41);
-            label11.Margin = new Padding(0);
-            label11.Name = "label11";
-            label11.Size = new Size(26, 31);
-            label11.TabIndex = 1;
-            label11.Text = "0";
-            label11.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            label12.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(23, 3);
-            label12.Margin = new Padding(0);
-            label12.Name = "label12";
-            label12.Size = new Size(202, 38);
-            label12.TabIndex = 0;
-            label12.Text = "Total Faculties";
-            label12.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel10
-            // 
-            panel10.Controls.Add(label9);
-            panel10.Controls.Add(label10);
-            panel10.Dock = DockStyle.Top;
-            panel10.Location = new Point(0, 163);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(247, 95);
-            panel10.TabIndex = 2;
             // 
             // label9
             // 
-            label9.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(111, 41);
-            label9.Margin = new Padding(0);
+            label9.BackColor = Color.Black;
+            label9.BorderStyle = BorderStyle.FixedSingle;
+            label9.Dock = DockStyle.Top;
+            label9.Font = new Font("Segoe UI Black", 30F, FontStyle.Bold);
+            label9.ForeColor = Color.DarkOrange;
+            label9.Location = new Point(0, 0);
             label9.Name = "label9";
-            label9.Size = new Size(26, 31);
-            label9.TabIndex = 1;
-            label9.Text = "0";
+            label9.Size = new Size(254, 69);
+            label9.TabIndex = 2;
+            label9.Text = "Statistics";
             label9.TextAlign = ContentAlignment.MiddleCenter;
+            label9.Click += label9_Click;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(button1);
+            panel7.Dock = DockStyle.Bottom;
+            panel7.Location = new Point(0, 449);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(247, 102);
+            panel7.TabIndex = 0;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Fill;
+            button1.Font = new Font("Segoe UI", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Black;
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(247, 102);
+            button1.TabIndex = 7;
+            button1.Text = "Log Out";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.DarkOrange;
+            panel11.BorderStyle = BorderStyle.Fixed3D;
+            panel11.Controls.Add(dateTimePicker2);
+            panel11.Controls.Add(label12);
+            panel11.Controls.Add(dateTimePicker1);
+            panel11.Controls.Add(label11);
+            panel11.Controls.Add(button12);
+            panel11.Controls.Add(button11);
+            panel11.Controls.Add(button10);
+            panel11.Controls.Add(comboBox4);
+            panel11.Controls.Add(label10);
+            panel11.Controls.Add(comboBox3);
+            panel11.Controls.Add(label5);
+            panel11.Controls.Add(comboBox2);
+            panel11.Controls.Add(comboBox1);
+            panel11.Controls.Add(label1);
+            panel11.Controls.Add(label26);
+            panel11.Dock = DockStyle.Top;
+            panel11.Location = new Point(321, 88);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(590, 304);
+            panel11.TabIndex = 7;
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Format = DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new Point(398, 162);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(149, 27);
+            dateTimePicker2.TabIndex = 23;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(313, 167);
+            label12.Name = "label12";
+            label12.Size = new Size(79, 20);
+            label12.TabIndex = 22;
+            label12.Text = "Due Date :";
+            label12.Click += label12_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(130, 162);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(149, 27);
+            dateTimePicker1.TabIndex = 23;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(41, 167);
+            label11.Name = "label11";
+            label11.Size = new Size(83, 20);
+            label11.TabIndex = 20;
+            label11.Text = "Start Date :";
+            // 
+            // button12
+            // 
+            button12.Location = new Point(358, 254);
+            button12.Name = "button12";
+            button12.Size = new Size(190, 33);
+            button12.TabIndex = 19;
+            button12.Text = "Edit Assignment";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            button11.Location = new Point(130, 254);
+            button11.Name = "button11";
+            button11.Size = new Size(190, 33);
+            button11.TabIndex = 18;
+            button11.Text = "Clear all";
+            button11.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.Location = new Point(131, 206);
+            button10.Name = "button10";
+            button10.Size = new Size(417, 33);
+            button10.TabIndex = 17;
+            button10.Text = "Submit your pdf";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // comboBox4
+            // 
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new Point(130, 123);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new Size(417, 28);
+            comboBox4.TabIndex = 16;
             // 
             // label10
             // 
-            label10.Anchor = AnchorStyles.Left | AnchorStyles.Right;
             label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(20, 3);
-            label10.Margin = new Padding(0);
+            label10.Location = new Point(63, 126);
             label10.Name = "label10";
-            label10.Size = new Size(208, 38);
-            label10.TabIndex = 0;
-            label10.Text = "Total Lecturers";
-            label10.TextAlign = ContentAlignment.MiddleCenter;
+            label10.Size = new Size(61, 20);
+            label10.TabIndex = 15;
+            label10.Text = "Faculty :";
             // 
-            // panel9
+            // comboBox3
             // 
-            panel9.Controls.Add(label8);
-            panel9.Controls.Add(label7);
-            panel9.Dock = DockStyle.Top;
-            panel9.Location = new Point(0, 68);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(247, 95);
-            panel9.TabIndex = 1;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(130, 84);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(417, 28);
+            comboBox3.TabIndex = 14;
             // 
-            // label8
+            // label5
             // 
-            label8.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(111, 44);
-            label8.Margin = new Padding(0);
-            label8.Name = "label8";
-            label8.Size = new Size(26, 31);
-            label8.TabIndex = 1;
-            label8.Text = "0";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
+            label5.AutoSize = true;
+            label5.Location = new Point(55, 87);
+            label5.Name = "label5";
+            label5.Size = new Size(69, 20);
+            label5.TabIndex = 13;
+            label5.Text = "Lecturer :";
             // 
-            // label7
+            // comboBox2
             // 
-            label7.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(22, 6);
-            label7.Margin = new Padding(0);
-            label7.Name = "label7";
-            label7.Size = new Size(204, 38);
-            label7.TabIndex = 0;
-            label7.Text = "Total Students";
-            label7.TextAlign = ContentAlignment.MiddleCenter;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(130, 45);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(417, 28);
+            comboBox2.TabIndex = 12;
             // 
-            // panel8
+            // comboBox1
             // 
-            panel8.Controls.Add(label6);
-            panel8.Dock = DockStyle.Top;
-            panel8.Location = new Point(0, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(247, 68);
-            panel8.TabIndex = 0;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(130, 6);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(417, 28);
+            comboBox1.TabIndex = 11;
             // 
-            // label6
+            // label1
             // 
-            label6.AutoSize = true;
-            label6.BackColor = Color.Black;
-            label6.BorderStyle = BorderStyle.FixedSingle;
-            label6.Dock = DockStyle.Fill;
-            label6.Font = new Font("Segoe UI Black", 30F, FontStyle.Bold);
-            label6.ForeColor = Color.DarkOrange;
-            label6.Location = new Point(0, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(254, 69);
-            label6.TabIndex = 0;
-            label6.Text = "Statistics";
-            label6.TextAlign = ContentAlignment.MiddleCenter;
+            label1.AutoSize = true;
+            label1.Location = new Point(68, 48);
+            label1.Name = "label1";
+            label1.Size = new Size(56, 20);
+            label1.TabIndex = 10;
+            label1.Text = "Intake :";
             // 
-            // pictureBox8
+            // label26
             // 
-            pictureBox8.BackColor = Color.DarkOrange;
-            pictureBox8.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox8.Dock = DockStyle.Fill;
-            pictureBox8.Image = Properties.Resources.logo;
-            pictureBox8.Location = new Point(321, 88);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(590, 551);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 4;
-            pictureBox8.TabStop = false;
+            label26.AutoSize = true;
+            label26.Location = new Point(13, 9);
+            label26.Name = "label26";
+            label26.Size = new Size(111, 20);
+            label26.TabIndex = 7;
+            label26.Text = "Module Name :";
+            label26.Click += label26_Click;
             // 
-            // Dashboard
+            // Assignment
             // 
-            AutoScaleDimensions = new SizeF(120F, 120F);
-            AutoScaleMode = AutoScaleMode.Dpi;
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1158, 684);
-            Controls.Add(pictureBox8);
-            Controls.Add(panel7);
-            Controls.Add(panel6);
+            Controls.Add(panel11);
             Controls.Add(panel4);
+            Controls.Add(panel6);
+            Controls.Add(panel2);
             Controls.Add(panel1);
-            Name = "Dashboard";
+            Name = "Assignment";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Dashboard";
+            Text = "Assignment";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             panel6.ResumeLayout(false);
             panel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -718,72 +838,83 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel13.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel7.ResumeLayout(false);
-            panel12.ResumeLayout(false);
-            panel12.PerformLayout();
-            panel11.ResumeLayout(false);
-            panel11.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
-            panel9.ResumeLayout(false);
-            panel9.PerformLayout();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel panel1;
+        private Panel panel2;
         private Panel panel3;
         private Label label3;
         private Label label4;
-        private Panel panel2;
-        private Label label2;
-        private Label label1;
-        private Panel panel4;
-        private Label label5;
         private Panel panel5;
-        private Panel panel6;
-        private Panel panel7;
-        private Panel panel9;
-        private Panel panel8;
-        private Label label6;
-        private Label label8;
         private Label label7;
-        private Button button1;
-        private Panel panel12;
-        private Label label13;
-        private Label label14;
-        private Panel panel11;
-        private Label label11;
-        private Label label12;
-        private Panel panel10;
-        private Label label9;
-        private Label label10;
-        private Panel panel13;
-        private PictureBox pictureBox1;
+        private Label label8;
+        private Label label2;
+        private Label label6;
+        private Label label15;
+        private Panel panel6;
         private Panel panel16;
+        private Button button5;
         private PictureBox pictureBox4;
         private Panel panel19;
+        private Button button3;
         private PictureBox pictureBox7;
         private Panel panel15;
+        private Button button6;
         private PictureBox pictureBox3;
         private Panel panel17;
+        private Button button7;
         private PictureBox pictureBox5;
         private Panel panel18;
+        private Button button8;
         private PictureBox pictureBox6;
         private Panel panel14;
-        private PictureBox pictureBox2;
-        private Button button5;
-        private Button button3;
-        private Button button6;
-        private Button button7;
-        private Button button8;
         private Button button4;
+        private PictureBox pictureBox2;
+        private Panel panel13;
         private Button button2;
-        private PictureBox pictureBox8;
-        private Label label15;
+        private PictureBox pictureBox1;
+        private Panel panel4;
+        private Panel panel7;
+        private Button button1;
+        private Label label9;
+        private Panel panel11;
+        private Label label26;
+        private Label label1;
+        private ComboBox comboBox3;
+        private Label label5;
+        private ComboBox comboBox2;
+        private ComboBox comboBox1;
+        private Button button12;
+        private Button button11;
+        private Button button10;
+        private ComboBox comboBox4;
+        private Label label10;
+        private DateTimePicker dateTimePicker2;
+        private Label label12;
+        private DateTimePicker dateTimePicker1;
+        private Label label11;
+        private Panel panel10;
+        private Label label18;
+        private Label label19;
+        private Panel panel8;
+        private Label label16;
+        private Label label17;
+        private Panel panel9;
+        private Label label13;
+        private Label label14;
     }
 }

@@ -63,6 +63,22 @@
             button2 = new Button();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
+            button13 = new Button();
+            label29 = new Label();
+            label28 = new Label();
+            label18 = new Label();
+            label17 = new Label();
+            label16 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            button12 = new Button();
+            textBox6 = new TextBox();
+            label5 = new Label();
+            panel8 = new Panel();
+            label9 = new Label();
             panel7 = new Panel();
             button1 = new Button();
             panel11 = new Panel();
@@ -85,22 +101,6 @@
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
-            label9 = new Label();
-            panel8 = new Panel();
-            label5 = new Label();
-            textBox6 = new TextBox();
-            button12 = new Button();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label28 = new Label();
-            label29 = new Label();
-            button13 = new Button();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
@@ -121,9 +121,9 @@
             panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
+            panel8.SuspendLayout();
             panel7.SuspendLayout();
             panel11.SuspendLayout();
-            panel8.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -305,6 +305,7 @@
             button5.TabIndex = 2;
             button5.Text = "Faculty";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // pictureBox4
             // 
@@ -368,7 +369,7 @@
             button6.Name = "button6";
             button6.Size = new Size(206, 42);
             button6.TabIndex = 2;
-            button6.Text = "Course";
+            button6.Text = "Assignment";
             button6.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
@@ -536,6 +537,158 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(247, 551);
             panel2.TabIndex = 6;
+            // 
+            // button13
+            // 
+            button13.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            button13.Location = new Point(77, 359);
+            button13.Name = "button13";
+            button13.Size = new Size(94, 29);
+            button13.TabIndex = 23;
+            button13.Text = "Print";
+            button13.UseVisualStyleBackColor = true;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(111, 313);
+            label29.Name = "label29";
+            label29.Size = new Size(60, 20);
+            label29.TabIndex = 16;
+            label29.Text = "0000.00";
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(111, 270);
+            label28.Name = "label28";
+            label28.Size = new Size(25, 20);
+            label28.TabIndex = 22;
+            label28.Text = "00";
+            label28.Click += label28_Click;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(111, 231);
+            label18.Name = "label18";
+            label18.Size = new Size(25, 20);
+            label18.TabIndex = 21;
+            label18.Text = "00";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(111, 190);
+            label17.Name = "label17";
+            label17.Size = new Size(52, 20);
+            label17.TabIndex = 20;
+            label17.Text = "000.00";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(17, 313);
+            label16.Name = "label16";
+            label16.Size = new Size(93, 20);
+            label16.TabIndex = 19;
+            label16.Text = "Total Salary :";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(24, 272);
+            label14.Name = "label14";
+            label14.Size = new Size(86, 20);
+            label14.TabIndex = 18;
+            label14.Text = "Additional :";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(3, 231);
+            label13.Name = "label13";
+            label13.Size = new Size(107, 20);
+            label13.TabIndex = 17;
+            label13.Text = "Working Days :";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(16, 190);
+            label12.Name = "label12";
+            label12.Size = new Size(94, 20);
+            label12.TabIndex = 16;
+            label12.Text = "Basic Salary :";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(111, 149);
+            label11.Name = "label11";
+            label11.Size = new Size(53, 20);
+            label11.TabIndex = 15;
+            label11.Text = "Name ";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(54, 149);
+            label10.Name = "label10";
+            label10.Size = new Size(56, 20);
+            label10.TabIndex = 14;
+            label10.Text = "Name :";
+            label10.Click += label10_Click;
+            // 
+            // button12
+            // 
+            button12.Location = new Point(77, 99);
+            button12.Name = "button12";
+            button12.Size = new Size(94, 29);
+            button12.TabIndex = 13;
+            button12.Text = "Search";
+            button12.UseVisualStyleBackColor = true;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(100, 51);
+            textBox6.Multiline = true;
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(130, 27);
+            textBox6.TabIndex = 12;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(6, 58);
+            label5.Name = "label5";
+            label5.Size = new Size(88, 20);
+            label5.TabIndex = 8;
+            label5.Text = "Lecturer ID :";
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(label9);
+            panel8.Dock = DockStyle.Top;
+            panel8.Location = new Point(0, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(247, 44);
+            panel8.TabIndex = 1;
+            // 
+            // label9
+            // 
+            label9.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label9.AutoSize = true;
+            label9.BackColor = Color.Black;
+            label9.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold);
+            label9.ForeColor = Color.DarkOrange;
+            label9.Location = new Point(5, 3);
+            label9.Margin = new Padding(0);
+            label9.Name = "label9";
+            label9.Size = new Size(239, 37);
+            label9.TabIndex = 2;
+            label9.Text = "Salary Calculator";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -749,158 +902,6 @@
             label19.TabIndex = 0;
             label19.Text = "First Name :";
             // 
-            // label9
-            // 
-            label9.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            label9.AutoSize = true;
-            label9.BackColor = Color.Black;
-            label9.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold);
-            label9.ForeColor = Color.DarkOrange;
-            label9.Location = new Point(5, 3);
-            label9.Margin = new Padding(0);
-            label9.Name = "label9";
-            label9.Size = new Size(239, 37);
-            label9.TabIndex = 2;
-            label9.Text = "Salary Calculator";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // panel8
-            // 
-            panel8.Controls.Add(label9);
-            panel8.Dock = DockStyle.Top;
-            panel8.Location = new Point(0, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(247, 44);
-            panel8.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(6, 58);
-            label5.Name = "label5";
-            label5.Size = new Size(88, 20);
-            label5.TabIndex = 8;
-            label5.Text = "Lecturer ID :";
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(100, 51);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(130, 27);
-            textBox6.TabIndex = 12;
-            // 
-            // button12
-            // 
-            button12.Location = new Point(77, 99);
-            button12.Name = "button12";
-            button12.Size = new Size(94, 29);
-            button12.TabIndex = 13;
-            button12.Text = "Search";
-            button12.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Location = new Point(54, 149);
-            label10.Name = "label10";
-            label10.Size = new Size(56, 20);
-            label10.TabIndex = 14;
-            label10.Text = "Name :";
-            label10.Click += label10_Click;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(111, 149);
-            label11.Name = "label11";
-            label11.Size = new Size(53, 20);
-            label11.TabIndex = 15;
-            label11.Text = "Name ";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(16, 190);
-            label12.Name = "label12";
-            label12.Size = new Size(94, 20);
-            label12.TabIndex = 16;
-            label12.Text = "Basic Salary :";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(3, 231);
-            label13.Name = "label13";
-            label13.Size = new Size(107, 20);
-            label13.TabIndex = 17;
-            label13.Text = "Working Days :";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(24, 272);
-            label14.Name = "label14";
-            label14.Size = new Size(86, 20);
-            label14.TabIndex = 18;
-            label14.Text = "Additional :";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(17, 313);
-            label16.Name = "label16";
-            label16.Size = new Size(93, 20);
-            label16.TabIndex = 19;
-            label16.Text = "Total Salary :";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Location = new Point(111, 190);
-            label17.Name = "label17";
-            label17.Size = new Size(52, 20);
-            label17.TabIndex = 20;
-            label17.Text = "000.00";
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Location = new Point(111, 231);
-            label18.Name = "label18";
-            label18.Size = new Size(25, 20);
-            label18.TabIndex = 21;
-            label18.Text = "00";
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Location = new Point(111, 270);
-            label28.Name = "label28";
-            label28.Size = new Size(25, 20);
-            label28.TabIndex = 22;
-            label28.Text = "00";
-            label28.Click += label28_Click;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Location = new Point(111, 313);
-            label29.Name = "label29";
-            label29.Size = new Size(60, 20);
-            label29.TabIndex = 16;
-            label29.Text = "0000.00";
-            // 
-            // button13
-            // 
-            button13.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button13.Location = new Point(77, 359);
-            button13.Name = "button13";
-            button13.Size = new Size(94, 29);
-            button13.TabIndex = 23;
-            button13.Text = "Print";
-            button13.UseVisualStyleBackColor = true;
-            // 
             // LecturerMgt
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -912,6 +913,7 @@
             Controls.Add(panel4);
             Controls.Add(panel1);
             Name = "LecturerMgt";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LecturerMgt";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -938,11 +940,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             panel7.ResumeLayout(false);
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
             ResumeLayout(false);
         }
 

@@ -1,6 +1,7 @@
-﻿namespace CampusHub
+﻿
+namespace CampusHub
 {
-    partial class login
+    partial class Login
     {
         /// <summary>
         ///  Required designer variable.
@@ -32,6 +33,8 @@
             panel2 = new Panel();
             panel1 = new Panel();
             panel4 = new Panel();
+            panel5 = new Panel();
+            btnExit = new Button();
             label5 = new Label();
             label6 = new Label();
             button1 = new Button();
@@ -45,6 +48,7 @@
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel4.SuspendLayout();
+            panel5.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -92,6 +96,7 @@
             // 
             // panel4
             // 
+            panel4.Controls.Add(panel5);
             panel4.Controls.Add(label5);
             panel4.Controls.Add(label6);
             panel4.Dock = DockStyle.Bottom;
@@ -99,6 +104,29 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(336, 152);
             panel4.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(btnExit);
+            panel5.Dock = DockStyle.Bottom;
+            panel5.Location = new Point(0, 98);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(336, 54);
+            panel5.TabIndex = 7;
+            // 
+            // btnExit
+            // 
+            btnExit.BackColor = Color.Black;
+            btnExit.Dock = DockStyle.Fill;
+            btnExit.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnExit.ForeColor = Color.DarkOrange;
+            btnExit.Location = new Point(0, 0);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(336, 54);
+            btnExit.TabIndex = 0;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = false;
+            btnExit.Click += button2_Click_1;
             // 
             // label5
             // 
@@ -218,7 +246,7 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // login
+            // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -226,19 +254,30 @@
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Controls.Add(panel2);
-            Name = "login";
+            Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "login";
+            Text = "Login";
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            panel5.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to exit?", "Exit Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
         #endregion
@@ -257,5 +296,7 @@
         private Label label6;
         private Label label5;
         private Panel panel4;
+        private Panel panel5;
+        private Button btnExit;
     }
 }

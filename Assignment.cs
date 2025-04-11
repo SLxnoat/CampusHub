@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CampusHub
 {
-    public partial class StudentMgt : Form
+    public partial class Assignment : Form
     {
-        public StudentMgt()
+        public Assignment()
         {
             InitializeComponent();
         }
@@ -33,23 +33,6 @@ namespace CampusHub
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
-            {
-                Login LoginForm = new Login();
-                LoginForm.Show();
-                this.Close();
-            }
-        }
-
-        private void StudentMgt_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
             LecturerMgt lecturerMgt = new LecturerMgt();
@@ -64,6 +47,38 @@ namespace CampusHub
             facultyMgt.Show();
 
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Login LoginForm = new Login();
+                LoginForm.Show();
+                this.Close();
+            }
+        }
+
+        private void label26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileSystemWatcher1_Changed(object sender, FileSystemEventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

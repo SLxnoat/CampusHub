@@ -19,7 +19,7 @@ namespace CampusHub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ogin LoginForm = new login();
+            Login LoginForm = new Login();
             LoginForm.Show();
 
             this.Close();
@@ -51,10 +51,14 @@ namespace CampusHub
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            login LoginForm = new login();
-            LoginForm.Show();
+            DialogResult result = MessageBox.Show("Are you sure you want to log out?", "Confirm Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            this.Close();
+            if (result == DialogResult.Yes)
+            {
+                Login LoginForm = new Login();
+                LoginForm.Show();
+                this.Close();
+            }
         }
 
         private void label10_Click(object sender, EventArgs e)
@@ -65,6 +69,14 @@ namespace CampusHub
         private void label28_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FacultyMgt facultyMgt = new FacultyMgt();
+            facultyMgt.Show();
+
+            this.Hide();
         }
     }
 }

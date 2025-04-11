@@ -319,6 +319,7 @@
             button5.TabIndex = 2;
             button5.Text = "Faculty";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // pictureBox4
             // 
@@ -382,7 +383,7 @@
             button6.Name = "button6";
             button6.Size = new Size(206, 42);
             button6.TabIndex = 2;
-            button6.Text = "Course";
+            button6.Text = "Assignment";
             button6.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
