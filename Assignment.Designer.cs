@@ -430,6 +430,7 @@
             button8.TabIndex = 2;
             button8.Text = "Exam Results";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // pictureBox6
             // 

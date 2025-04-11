@@ -81,5 +81,13 @@ namespace CampusHub
 
             this.Close();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ExamResults examResults = new ExamResults();
+            examResults.Show();
+
+            this.Close();
+        }
     }
 }

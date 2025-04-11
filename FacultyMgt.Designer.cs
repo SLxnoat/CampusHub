@@ -63,6 +63,8 @@
             button2 = new Button();
             pictureBox1 = new PictureBox();
             panel4 = new Panel();
+            comboBox2 = new ComboBox();
+            label14 = new Label();
             button13 = new Button();
             button12 = new Button();
             comboBox1 = new ComboBox();
@@ -85,8 +87,6 @@
             button10 = new Button();
             button9 = new Button();
             label26 = new Label();
-            comboBox2 = new ComboBox();
-            label14 = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
@@ -422,6 +422,7 @@
             button8.TabIndex = 2;
             button8.Text = "Exam Results";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // pictureBox6
             // 
@@ -520,6 +521,24 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(247, 551);
             panel4.TabIndex = 6;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "1st Semester", "2nd Semester", "3rd Semester" });
+            comboBox2.Location = new Point(6, 251);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(229, 28);
+            comboBox2.TabIndex = 17;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(6, 226);
+            label14.Name = "label14";
+            label14.Size = new Size(77, 20);
+            label14.TabIndex = 16;
+            label14.Text = "Semester :";
             // 
             // button13
             // 
@@ -731,24 +750,6 @@
             label26.Size = new Size(105, 20);
             label26.TabIndex = 7;
             label26.Text = "Faculty Name :";
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "1st Semester", "2nd Semester", "3rd Semester" });
-            comboBox2.Location = new Point(6, 251);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(229, 28);
-            comboBox2.TabIndex = 17;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(6, 226);
-            label14.Name = "label14";
-            label14.Size = new Size(77, 20);
-            label14.TabIndex = 16;
-            label14.Text = "Semester :";
             // 
             // FacultyMgt
             // 

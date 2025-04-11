@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             label15 = new Label();
             panel5 = new Panel();
-            label2 = new Label();
-            label1 = new Label();
+            lblDate = new Label();
+            lblClock = new Label();
             panel3 = new Panel();
             label3 = new Label();
             label4 = new Label();
@@ -78,6 +79,7 @@
             panel8 = new Panel();
             label6 = new Label();
             pictureBox8 = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
@@ -133,36 +135,36 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(label2);
-            panel5.Controls.Add(label1);
+            panel5.Controls.Add(lblDate);
+            panel5.Controls.Add(lblClock);
             panel5.Dock = DockStyle.Right;
             panel5.Location = new Point(911, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(247, 88);
             panel5.TabIndex = 4;
             // 
-            // label2
+            // lblDate
             // 
-            label2.Anchor = AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label2.Location = new Point(136, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(108, 25);
-            label2.TabIndex = 1;
-            label2.Text = "00/00/0000";
-            label2.Click += label2_Click;
+            lblDate.Anchor = AnchorStyles.Right;
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblDate.Location = new Point(136, 9);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(108, 25);
+            lblDate.TabIndex = 1;
+            lblDate.Text = "00/00/0000";
+            lblDate.Click += label2_Click;
             // 
-            // label1
+            // lblClock
             // 
-            label1.Anchor = AnchorStyles.Right;
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label1.Location = new Point(185, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(57, 25);
-            label1.TabIndex = 0;
-            label1.Text = "00:00";
+            lblClock.Anchor = AnchorStyles.Right;
+            lblClock.AutoSize = true;
+            lblClock.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblClock.Location = new Point(185, 34);
+            lblClock.Name = "lblClock";
+            lblClock.Size = new Size(57, 25);
+            lblClock.TabIndex = 0;
+            lblClock.Text = "00:00";
             // 
             // panel3
             // 
@@ -397,6 +399,7 @@
             button8.TabIndex = 2;
             button8.Text = "Exam Results";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // pictureBox6
             // 
@@ -684,6 +687,12 @@
             pictureBox8.TabIndex = 4;
             pictureBox8.TabStop = false;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            timer1.Tick += timer1_Tick;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(120F, 120F);
@@ -697,6 +706,7 @@
             Name = "Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";
+            Load += Dashboard_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel5.ResumeLayout(false);
@@ -742,8 +752,8 @@
         private Label label3;
         private Label label4;
         private Panel panel2;
-        private Label label2;
-        private Label label1;
+        private Label lblDate;
+        private Label lblClock;
         private Panel panel4;
         private Label label5;
         private Panel panel5;
@@ -787,5 +797,6 @@
         private Button button2;
         private PictureBox pictureBox8;
         private Label label15;
+        private System.Windows.Forms.Timer timer1;
     }
 }
