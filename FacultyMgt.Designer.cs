@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             label15 = new Label();
             panel5 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
+            lblDate = new Label();
+            lblClock = new Label();
             label2 = new Label();
             label6 = new Label();
             panel3 = new Panel();
@@ -87,6 +88,7 @@
             button10 = new Button();
             button9 = new Button();
             label26 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
@@ -138,8 +140,8 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(label7);
-            panel5.Controls.Add(label8);
+            panel5.Controls.Add(lblDate);
+            panel5.Controls.Add(lblClock);
             panel5.Controls.Add(label2);
             panel5.Controls.Add(label6);
             panel5.Dock = DockStyle.Right;
@@ -148,29 +150,29 @@
             panel5.Size = new Size(247, 88);
             panel5.TabIndex = 7;
             // 
-            // label7
+            // lblDate
             // 
-            label7.Anchor = AnchorStyles.Right;
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label7.ForeColor = Color.DarkOrange;
-            label7.Location = new Point(139, 0);
-            label7.Name = "label7";
-            label7.Size = new Size(108, 25);
-            label7.TabIndex = 3;
-            label7.Text = "00/00/0000";
+            lblDate.Anchor = AnchorStyles.Right;
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblDate.ForeColor = Color.DarkOrange;
+            lblDate.Location = new Point(127, 0);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(108, 25);
+            lblDate.TabIndex = 3;
+            lblDate.Text = "00/00/0000";
             // 
-            // label8
+            // lblClock
             // 
-            label8.Anchor = AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label8.ForeColor = Color.DarkOrange;
-            label8.Location = new Point(190, 25);
-            label8.Name = "label8";
-            label8.Size = new Size(57, 25);
-            label8.TabIndex = 2;
-            label8.Text = "00:00";
+            lblClock.Anchor = AnchorStyles.Right;
+            lblClock.AutoSize = true;
+            lblClock.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblClock.ForeColor = Color.DarkOrange;
+            lblClock.Location = new Point(178, 26);
+            lblClock.Name = "lblClock";
+            lblClock.Size = new Size(57, 25);
+            lblClock.TabIndex = 2;
+            lblClock.Text = "00:00";
             // 
             // label2
             // 
@@ -751,6 +753,10 @@
             label26.TabIndex = 7;
             label26.Text = "Faculty Name :";
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // FacultyMgt
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -828,8 +834,8 @@
         private Label label3;
         private Label label4;
         private Panel panel5;
-        private Label label7;
-        private Label label8;
+        private Label lblDate;
+        private Label lblClock;
         private Label label2;
         private Label label6;
         private Label label15;
@@ -859,5 +865,6 @@
         private Label label13;
         private ComboBox comboBox2;
         private Label label14;
+        private System.Windows.Forms.Timer timer1;
     }
 }

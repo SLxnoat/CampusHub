@@ -19,7 +19,7 @@ namespace CampusHub
 
         private void FacultyMgt_Load(object sender, EventArgs e)
         {
-
+            timer1.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -88,6 +88,12 @@ namespace CampusHub
             examResults.Show();
 
             this.Close();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblClock.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
         }
     }
 }

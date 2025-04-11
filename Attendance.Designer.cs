@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel1 = new Panel();
             button10 = new Button();
             panel11 = new Panel();
@@ -48,9 +49,8 @@
             panel2 = new Panel();
             label15 = new Label();
             panel5 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
-            label2 = new Label();
+            lblDate = new Label();
+            lblClock = new Label();
             label6 = new Label();
             panel4 = new Panel();
             label3 = new Label();
@@ -99,6 +99,7 @@
             comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             label22 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             panel1.SuspendLayout();
             panel11.SuspendLayout();
             panel10.SuspendLayout();
@@ -354,9 +355,8 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(label7);
-            panel5.Controls.Add(label8);
-            panel5.Controls.Add(label2);
+            panel5.Controls.Add(lblDate);
+            panel5.Controls.Add(lblClock);
             panel5.Controls.Add(label6);
             panel5.Dock = DockStyle.Right;
             panel5.Location = new Point(911, 0);
@@ -364,40 +364,29 @@
             panel5.Size = new Size(247, 88);
             panel5.TabIndex = 6;
             // 
-            // label7
+            // lblDate
             // 
-            label7.Anchor = AnchorStyles.Right;
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label7.ForeColor = Color.DarkOrange;
-            label7.Location = new Point(141, 1);
-            label7.Name = "label7";
-            label7.Size = new Size(108, 25);
-            label7.TabIndex = 3;
-            label7.Text = "00/00/0000";
+            lblDate.Anchor = AnchorStyles.Right;
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblDate.ForeColor = Color.DarkOrange;
+            lblDate.Location = new Point(131, 3);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(108, 25);
+            lblDate.TabIndex = 3;
+            lblDate.Text = "00/00/0000";
             // 
-            // label8
+            // lblClock
             // 
-            label8.Anchor = AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label8.ForeColor = Color.DarkOrange;
-            label8.Location = new Point(190, 26);
-            label8.Name = "label8";
-            label8.Size = new Size(57, 25);
-            label8.TabIndex = 2;
-            label8.Text = "00:00";
-            // 
-            // label2
-            // 
-            label2.Anchor = AnchorStyles.Right;
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label2.Location = new Point(230, -3);
-            label2.Name = "label2";
-            label2.Size = new Size(108, 25);
-            label2.TabIndex = 1;
-            label2.Text = "00/00/0000";
+            lblClock.Anchor = AnchorStyles.Right;
+            lblClock.AutoSize = true;
+            lblClock.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblClock.ForeColor = Color.DarkOrange;
+            lblClock.Location = new Point(182, 26);
+            lblClock.Name = "lblClock";
+            lblClock.Size = new Size(57, 25);
+            lblClock.TabIndex = 2;
+            lblClock.Text = "00:00";
             // 
             // label6
             // 
@@ -793,7 +782,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Introduction to Programming", "", "", "Database Systems", "", "", "Software Engineering Principles", "", "", "Financial Accounting", "", "", "Marketing Management", "", "", "Business Ethics & Law", "", "", "Civil Engineering Mechanics", "", "", "Thermodynamics", "", "", "Digital Electronics", "", "", "Anatomy & Physiology", "", "", "Clinical Medicine", "", "", "Criminal Law & Justice", "", "", "Legal Writing & Research", "", "", "World History & Culture", "", "", "Psychology of Learning", "", "", "Applied Mathematics", "", "", "Organic Chemistry", "", "", "Teaching Methodologies", "", "", "Educational Psychology", "", "", "Agricultural Science & Technology", "", "", "Soil & Water Management", "", "", "Architectural Design Studio", "", "", "Sustainable Urban Planning", "", "", "Artificial Intelligence", "", "", "Data Structures & Algorithms" });
+            comboBox2.Items.AddRange(new object[] { "Introduction to Programming", "Database Systems", "Software Engineering Principles", "Financial Accounting", "Marketing Management", "Business Ethics & Law", "Civil Engineering Mechanics", "Thermodynamics", "Digital Electronics", "Anatomy & Physiology", "Clinical Medicine", "Criminal Law & Justice", "Legal Writing & Research", "World History & Culture", "Psychology of Learning", "Applied Mathematics", "Organic Chemistry", "Teaching Methodologies", "Educational Psychology", "Agricultural Science & Technology", "Soil & Water Management", "Architectural Design Studio", "Sustainable Urban Planning", "Artificial Intelligence", "Data Structures & Algorithms" });
             comboBox2.Location = new Point(133, 105);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(250, 28);
@@ -891,7 +880,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Introduction to Programming", "", "", "Database Systems", "", "", "Software Engineering Principles", "", "", "Financial Accounting", "", "", "Marketing Management", "", "", "Business Ethics & Law", "", "", "Civil Engineering Mechanics", "", "", "Thermodynamics", "", "", "Digital Electronics", "", "", "Anatomy & Physiology", "", "", "Clinical Medicine", "", "", "Criminal Law & Justice", "", "", "Legal Writing & Research", "", "", "World History & Culture", "", "", "Psychology of Learning", "", "", "Applied Mathematics", "", "", "Organic Chemistry", "", "", "Teaching Methodologies", "", "", "Educational Psychology", "", "", "Agricultural Science & Technology", "", "", "Soil & Water Management", "", "", "Architectural Design Studio", "", "", "Sustainable Urban Planning", "", "", "Artificial Intelligence", "", "", "Data Structures & Algorithms" });
+            comboBox1.Items.AddRange(new object[] { "Introduction to Programming", "Database Systems", "Software Engineering Principles", "Financial Accounting", "Marketing Management", "Business Ethics & Law", "Civil Engineering Mechanics", "Thermodynamics", "Digital Electronics", "Anatomy & Physiology", "Clinical Medicine", "Criminal Law & Justice", "Legal Writing & Research", "World History & Culture", "Psychology of Learning", "Applied Mathematics", "Organic Chemistry", "Teaching Methodologies", "Educational Psychology", "Agricultural Science & Technology", "Soil & Water Management", "Architectural Design Studio", "Sustainable Urban Planning", "Artificial Intelligence", "Data Structures & Algorithms" });
             comboBox1.Location = new Point(133, 105);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(250, 28);
@@ -914,6 +903,10 @@
             label22.TabIndex = 7;
             label22.Text = "Lecturer ID :";
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // Attendance
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -928,6 +921,7 @@
             Name = "Attendance";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Attendance";
+            Load += Attendance_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel11.ResumeLayout(false);
@@ -978,9 +972,8 @@
         private Label label3;
         private Label label4;
         private Panel panel5;
-        private Label label7;
-        private Label label8;
-        private Label label2;
+        private Label lblDate;
+        private Label lblClock;
         private Label label6;
         private Label label15;
         private Panel panel6;
@@ -1041,5 +1034,6 @@
         private ComboBox comboBox1;
         private TextBox textBox1;
         private Label label22;
+        private System.Windows.Forms.Timer timer1;
     }
 }

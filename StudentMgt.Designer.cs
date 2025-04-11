@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             panel4 = new Panel();
             label1 = new Label();
             label5 = new Label();
             panel1 = new Panel();
             label15 = new Label();
             panel5 = new Panel();
-            label7 = new Label();
-            label8 = new Label();
+            lblDate = new Label();
+            lblClock = new Label();
             label2 = new Label();
             label6 = new Label();
             panel3 = new Panel();
@@ -98,6 +99,10 @@
             label21 = new Label();
             label20 = new Label();
             label19 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
+            label7 = new Label();
+            checkBox1 = new CheckBox();
+            checkBox2 = new CheckBox();
             panel4.SuspendLayout();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
@@ -192,8 +197,8 @@
             // 
             // panel5
             // 
-            panel5.Controls.Add(label7);
-            panel5.Controls.Add(label8);
+            panel5.Controls.Add(lblDate);
+            panel5.Controls.Add(lblClock);
             panel5.Controls.Add(label2);
             panel5.Controls.Add(label6);
             panel5.Dock = DockStyle.Right;
@@ -202,29 +207,29 @@
             panel5.Size = new Size(247, 88);
             panel5.TabIndex = 5;
             // 
-            // label7
+            // lblDate
             // 
-            label7.Anchor = AnchorStyles.Right;
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label7.ForeColor = Color.DarkOrange;
-            label7.Location = new Point(127, 9);
-            label7.Name = "label7";
-            label7.Size = new Size(108, 25);
-            label7.TabIndex = 3;
-            label7.Text = "00/00/0000";
+            lblDate.Anchor = AnchorStyles.Right;
+            lblDate.AutoSize = true;
+            lblDate.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblDate.ForeColor = Color.DarkOrange;
+            lblDate.Location = new Point(127, 9);
+            lblDate.Name = "lblDate";
+            lblDate.Size = new Size(108, 25);
+            lblDate.TabIndex = 3;
+            lblDate.Text = "00/00/0000";
             // 
-            // label8
+            // lblClock
             // 
-            label8.Anchor = AnchorStyles.Right;
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
-            label8.ForeColor = Color.DarkOrange;
-            label8.Location = new Point(176, 34);
-            label8.Name = "label8";
-            label8.Size = new Size(57, 25);
-            label8.TabIndex = 2;
-            label8.Text = "00:00";
+            lblClock.Anchor = AnchorStyles.Right;
+            lblClock.AutoSize = true;
+            lblClock.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold);
+            lblClock.ForeColor = Color.DarkOrange;
+            lblClock.Location = new Point(176, 34);
+            lblClock.Name = "lblClock";
+            lblClock.Size = new Size(57, 25);
+            lblClock.TabIndex = 2;
+            lblClock.Text = "00:00";
             // 
             // label2
             // 
@@ -722,6 +727,9 @@
             // 
             panel11.BackColor = Color.DarkOrange;
             panel11.BorderStyle = BorderStyle.Fixed3D;
+            panel11.Controls.Add(checkBox2);
+            panel11.Controls.Add(checkBox1);
+            panel11.Controls.Add(label7);
             panel11.Controls.Add(button11);
             panel11.Controls.Add(button10);
             panel11.Controls.Add(button9);
@@ -744,12 +752,12 @@
             panel11.Dock = DockStyle.Top;
             panel11.Location = new Point(321, 88);
             panel11.Name = "panel11";
-            panel11.Size = new Size(590, 276);
+            panel11.Size = new Size(590, 298);
             panel11.TabIndex = 6;
             // 
             // button11
             // 
-            button11.Location = new Point(269, 210);
+            button11.Location = new Point(269, 243);
             button11.Name = "button11";
             button11.Size = new Size(110, 35);
             button11.TabIndex = 17;
@@ -758,7 +766,7 @@
             // 
             // button10
             // 
-            button10.Location = new Point(413, 210);
+            button10.Location = new Point(413, 243);
             button10.Name = "button10";
             button10.Size = new Size(110, 35);
             button10.TabIndex = 16;
@@ -767,7 +775,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(125, 210);
+            button9.Location = new Point(125, 243);
             button9.Name = "button9";
             button9.Size = new Size(110, 35);
             button9.TabIndex = 15;
@@ -786,6 +794,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Intake 1", "", "", "Intake 2", "", "", "Intake 3", "", "", "Intake 4", "", "", "Intake 5", "", "", "Intake 6", "", "", "Intake 7", "", "", "Intake 8", "", "", "Intake 9", "", "", "Intake 10", "", "", "Intake 11", "", "", "Intake 12" });
             comboBox2.Location = new Point(398, 149);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(186, 28);
@@ -910,6 +919,39 @@
             label19.TabIndex = 0;
             label19.Text = "First Name :";
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(35, 194);
+            label7.Name = "label7";
+            label7.Size = new Size(64, 20);
+            label7.TabIndex = 18;
+            label7.Text = "Gender :";
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Location = new Point(105, 192);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(64, 24);
+            checkBox1.TabIndex = 19;
+            checkBox1.Text = "Male";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.Location = new Point(185, 192);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(79, 24);
+            checkBox2.TabIndex = 20;
+            checkBox2.Text = "Female";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
             // StudentMgt
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -996,8 +1038,8 @@
         private Panel panel5;
         private Label label2;
         private Label label6;
-        private Label label7;
-        private Label label8;
+        private Label lblDate;
+        private Label lblClock;
         private Label label15;
         private Panel panel2;
         private Label label9;
@@ -1034,5 +1076,9 @@
         private Label label27;
         private Button button11;
         private Button button10;
+        private System.Windows.Forms.Timer timer1;
+        private CheckBox checkBox2;
+        private CheckBox checkBox1;
+        private Label label7;
     }
 }

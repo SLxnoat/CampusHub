@@ -89,5 +89,16 @@ namespace CampusHub
 
             this.Close();
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblClock.Text = DateTime.Now.ToString("hh:mm:ss tt");
+            lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
+        }
+
+        private void ExamResults_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }
