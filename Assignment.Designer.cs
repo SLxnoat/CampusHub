@@ -90,9 +90,11 @@
             comboBox1 = new ComboBox();
             label1 = new Label();
             label26 = new Label();
+            label20 = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
+            panel2.SuspendLayout();
             panel6.SuspendLayout();
             panel16.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -237,6 +239,7 @@
             // panel2
             // 
             panel2.BackColor = Color.Black;
+            panel2.Controls.Add(label20);
             panel2.Dock = DockStyle.Bottom;
             panel2.ForeColor = Color.DarkOrange;
             panel2.Location = new Point(0, 639);
@@ -804,6 +807,21 @@
             label26.Text = "Module Name :";
             label26.Click += label26_Click;
             // 
+            // label20
+            // 
+            label20.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            label20.AutoSize = true;
+            label20.Font = new Font("Segoe UI", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label20.ForeColor = Color.DarkOrange;
+            label20.Location = new Point(81, 1);
+            label20.Name = "label20";
+            label20.Padding = new Padding(110, 10, 110, 10);
+            label20.Size = new Size(996, 42);
+            label20.TabIndex = 3;
+            label20.Text = "© 2025 H M C M Bandara    Designed & Developed by ArtXpert-Code    All rights reserved.    Unauthorized duplication is prohibited.";
+            label20.TextAlign = ContentAlignment.TopCenter;
+            label20.UseCompatibleTextRendering = true;
+            // 
             // Assignment
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -823,6 +841,8 @@
             panel5.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             panel6.ResumeLayout(false);
             panel16.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -916,5 +936,6 @@
         private Panel panel9;
         private Label label13;
         private Label label14;
+        private Label label20;
     }
 }
