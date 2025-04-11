@@ -27,7 +27,7 @@ namespace CampusHub
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
 
             Dashboard dashboardForm = new Dashboard();
             dashboardForm.Show();
@@ -38,7 +38,7 @@ namespace CampusHub
             StudentMgt studentMgt = new StudentMgt();
             studentMgt.Show();
 
-            this.Hide();
+            this.Close();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -46,7 +46,7 @@ namespace CampusHub
             LecturerMgt lecturerMgt = new LecturerMgt();
             lecturerMgt.Show();
 
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -76,7 +76,23 @@ namespace CampusHub
             FacultyMgt facultyMgt = new FacultyMgt();
             facultyMgt.Show();
 
-            this.Hide();
+            this.Close();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Assignment assignment = new Assignment();
+            assignment.Show();
+
+            this.Close();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Attendance attendance = new Attendance();
+            attendance.Show();
+
+            this.Close();
         }
     }
 }

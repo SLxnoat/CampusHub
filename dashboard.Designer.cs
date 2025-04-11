@@ -331,6 +331,7 @@
             button6.TabIndex = 2;
             button6.Text = "Assignment";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // pictureBox3
             // 
@@ -363,6 +364,7 @@
             button7.TabIndex = 2;
             button7.Text = "Attendance";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // pictureBox5
             // 

@@ -85,6 +85,8 @@
             button10 = new Button();
             button9 = new Button();
             label26 = new Label();
+            comboBox2 = new ComboBox();
+            label14 = new Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel3.SuspendLayout();
@@ -354,6 +356,7 @@
             button6.TabIndex = 2;
             button6.Text = "Assignment";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // pictureBox3
             // 
@@ -386,6 +389,7 @@
             button7.TabIndex = 2;
             button7.Text = "Attendance";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // pictureBox5
             // 
@@ -499,6 +503,8 @@
             // panel4
             // 
             panel4.BackColor = Color.DarkOrange;
+            panel4.Controls.Add(comboBox2);
+            panel4.Controls.Add(label14);
             panel4.Controls.Add(button13);
             panel4.Controls.Add(button12);
             panel4.Controls.Add(comboBox1);
@@ -517,7 +523,7 @@
             // 
             // button13
             // 
-            button13.Location = new Point(39, 275);
+            button13.Location = new Point(39, 341);
             button13.Name = "button13";
             button13.Size = new Size(178, 29);
             button13.TabIndex = 15;
@@ -526,7 +532,7 @@
             // 
             // button12
             // 
-            button12.Location = new Point(39, 236);
+            button12.Location = new Point(39, 302);
             button12.Name = "button12";
             button12.Size = new Size(178, 29);
             button12.TabIndex = 14;
@@ -536,6 +542,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Computing", "Business Management", "Engineering", "Medicine", "Law", "Arts and Humanities", "Faculty of Science", "Faculty of Education", "Faculty of Agriculture", "Faculty of Architecture and Design" });
             comboBox1.Location = new Point(6, 192);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(229, 28);
@@ -725,6 +732,24 @@
             label26.TabIndex = 7;
             label26.Text = "Faculty Name :";
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "1st Semester", "2nd Semester", "3rd Semester" });
+            comboBox2.Location = new Point(6, 251);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(229, 28);
+            comboBox2.TabIndex = 17;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(6, 226);
+            label14.Name = "label14";
+            label14.Size = new Size(77, 20);
+            label14.TabIndex = 16;
+            label14.Text = "Semester :";
+            // 
             // FacultyMgt
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -831,5 +856,7 @@
         private Label label12;
         private TextBox textBox4;
         private Label label13;
+        private ComboBox comboBox2;
+        private Label label14;
     }
 }

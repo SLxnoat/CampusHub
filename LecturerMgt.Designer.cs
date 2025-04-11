@@ -371,6 +371,7 @@
             button6.TabIndex = 2;
             button6.Text = "Assignment";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // pictureBox3
             // 
@@ -403,6 +404,7 @@
             button7.TabIndex = 2;
             button7.Text = "Attendance";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // pictureBox5
             // 
@@ -787,6 +789,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Computing", "Business Management", "Engineering", "Medicine", "Law", "Arts and Humanities", "Faculty of Science", "Faculty of Education", "Faculty of Agriculture", "Faculty of Architecture and Design" });
             comboBox1.Location = new Point(397, 103);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(186, 28);
