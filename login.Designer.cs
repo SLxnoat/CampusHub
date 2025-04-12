@@ -174,6 +174,7 @@ namespace CampusHub
             tbLoginPw.Location = new Point(19, 314);
             tbLoginPw.Name = "tbLoginPw";
             tbLoginPw.PasswordChar = '*';
+            tbLoginPw.PlaceholderText = "enter your password here";
             tbLoginPw.Size = new Size(301, 31);
             tbLoginPw.TabIndex = 3;
             // 
@@ -185,6 +186,7 @@ namespace CampusHub
             tbLoginUser.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
             tbLoginUser.Location = new Point(19, 219);
             tbLoginUser.Name = "tbLoginUser";
+            tbLoginUser.PlaceholderText = "enter your user id here";
             tbLoginUser.Size = new Size(301, 31);
             tbLoginUser.TabIndex = 3;
             // 

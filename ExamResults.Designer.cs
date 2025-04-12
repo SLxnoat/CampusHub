@@ -68,6 +68,12 @@
             button2 = new Button();
             pictureBox1 = new PictureBox();
             panel11 = new Panel();
+            comboBox14 = new ComboBox();
+            comboBox13 = new ComboBox();
+            comboBox12 = new ComboBox();
+            comboBox11 = new ComboBox();
+            comboBox10 = new ComboBox();
+            comboBox9 = new ComboBox();
             button11 = new Button();
             button10 = new Button();
             comboBox8 = new ComboBox();
@@ -90,12 +96,6 @@
             button9 = new Button();
             label26 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
-            comboBox9 = new ComboBox();
-            comboBox10 = new ComboBox();
-            comboBox11 = new ComboBox();
-            comboBox12 = new ComboBox();
-            comboBox13 = new ComboBox();
-            comboBox14 = new ComboBox();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
@@ -596,6 +596,60 @@
             panel11.Size = new Size(590, 339);
             panel11.TabIndex = 7;
             // 
+            // comboBox14
+            // 
+            comboBox14.FormattingEnabled = true;
+            comboBox14.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
+            comboBox14.Location = new Point(520, 190);
+            comboBox14.Name = "comboBox14";
+            comboBox14.Size = new Size(46, 28);
+            comboBox14.TabIndex = 40;
+            // 
+            // comboBox13
+            // 
+            comboBox13.FormattingEnabled = true;
+            comboBox13.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
+            comboBox13.Location = new Point(520, 157);
+            comboBox13.Name = "comboBox13";
+            comboBox13.Size = new Size(46, 28);
+            comboBox13.TabIndex = 39;
+            // 
+            // comboBox12
+            // 
+            comboBox12.FormattingEnabled = true;
+            comboBox12.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
+            comboBox12.Location = new Point(520, 124);
+            comboBox12.Name = "comboBox12";
+            comboBox12.Size = new Size(46, 28);
+            comboBox12.TabIndex = 38;
+            // 
+            // comboBox11
+            // 
+            comboBox11.FormattingEnabled = true;
+            comboBox11.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
+            comboBox11.Location = new Point(520, 91);
+            comboBox11.Name = "comboBox11";
+            comboBox11.Size = new Size(46, 28);
+            comboBox11.TabIndex = 37;
+            // 
+            // comboBox10
+            // 
+            comboBox10.FormattingEnabled = true;
+            comboBox10.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
+            comboBox10.Location = new Point(520, 223);
+            comboBox10.Name = "comboBox10";
+            comboBox10.Size = new Size(46, 28);
+            comboBox10.TabIndex = 36;
+            // 
+            // comboBox9
+            // 
+            comboBox9.FormattingEnabled = true;
+            comboBox9.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
+            comboBox9.Location = new Point(520, 58);
+            comboBox9.Name = "comboBox9";
+            comboBox9.Size = new Size(46, 28);
+            comboBox9.TabIndex = 35;
+            // 
             // button11
             // 
             button11.Location = new Point(407, 279);
@@ -791,60 +845,6 @@
             timer1.Enabled = true;
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
-            // 
-            // comboBox9
-            // 
-            comboBox9.FormattingEnabled = true;
-            comboBox9.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
-            comboBox9.Location = new Point(520, 58);
-            comboBox9.Name = "comboBox9";
-            comboBox9.Size = new Size(46, 28);
-            comboBox9.TabIndex = 35;
-            // 
-            // comboBox10
-            // 
-            comboBox10.FormattingEnabled = true;
-            comboBox10.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
-            comboBox10.Location = new Point(520, 223);
-            comboBox10.Name = "comboBox10";
-            comboBox10.Size = new Size(46, 28);
-            comboBox10.TabIndex = 36;
-            // 
-            // comboBox11
-            // 
-            comboBox11.FormattingEnabled = true;
-            comboBox11.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
-            comboBox11.Location = new Point(520, 91);
-            comboBox11.Name = "comboBox11";
-            comboBox11.Size = new Size(46, 28);
-            comboBox11.TabIndex = 37;
-            // 
-            // comboBox12
-            // 
-            comboBox12.FormattingEnabled = true;
-            comboBox12.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
-            comboBox12.Location = new Point(520, 124);
-            comboBox12.Name = "comboBox12";
-            comboBox12.Size = new Size(46, 28);
-            comboBox12.TabIndex = 38;
-            // 
-            // comboBox13
-            // 
-            comboBox13.FormattingEnabled = true;
-            comboBox13.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
-            comboBox13.Location = new Point(520, 157);
-            comboBox13.Name = "comboBox13";
-            comboBox13.Size = new Size(46, 28);
-            comboBox13.TabIndex = 39;
-            // 
-            // comboBox14
-            // 
-            comboBox14.FormattingEnabled = true;
-            comboBox14.Items.AddRange(new object[] { "A+", "A", "A−", "B+", "B", "B−", "C+", "C", "C−", "D+", "D", "F", "I (Incomplete)", "W (Withdrawn)", "NA (Not Available)" });
-            comboBox14.Location = new Point(520, 190);
-            comboBox14.Name = "comboBox14";
-            comboBox14.Size = new Size(46, 28);
-            comboBox14.TabIndex = 40;
             // 
             // ExamResults
             // 
